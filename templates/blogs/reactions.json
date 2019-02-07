@@ -15,7 +15,14 @@
   {
     "source": "Masters of the Universe",
     "reactions": [
-      ["!thepower","I have the power!"]
+      ["!thepower","I have the power!"],
+      ["!gwelp", "Help! Help! Somebody!"],
+      ["!gwenter", "Come in! Come in! Welcome to my home!"],
+      ["!hewhowaits", "Everything comes to he who waits."],
+      ["!canthide", "You cannot hide from me. (evil laugh)"],
+      ["!killhim", "Kill him!"],
+      ["!thanksorc", "Thank the sorceress you're alive!"],
+      ["!thinkhungry", "Never think while you're hungry."]
     ]
   },
   {
