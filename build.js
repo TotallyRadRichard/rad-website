@@ -1,7 +1,7 @@
 const path = require('path'),
       fs = require('fs'),
       ejs = require('ejs'),
-      blogs = require('./templates/blogs.json'),
+      blogs = require('./templates/blogs/blogs.json'),
       profiles = require('./templates/profiles.json'),
       friends = [[],[]],
       pickedFriends = [],
@@ -24,9 +24,17 @@ while(friendCount < 8) {
 }
 
 blogs.forEach(blog => {
-  blog.data = require(path.resolve('./', 'templates/blogs', blog.data));
-
+  if(blog.data) {
+    blog.data = require(path.resolve('./', 'templates/blogs', blog.data));
+  } else {
+    blog.data = {};
+  }
+  
   ejs.renderFile('templates/blogs/blog_base.ejs', blog, function(err, html) {
+    if(err) {
+      return console.log(err);
+    }
+
     fs.writeFileSync(path.join('blogs', `${blog.file}.html`), html);
   });
 });

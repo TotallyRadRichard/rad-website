@@ -1,0 +1,27 @@
+[
+  {
+    "source": "Jurassic Park",
+    "reactions": [
+      ["!adino","It's...It's a dinosaur."],
+      ["!holdbutts","Hold onto your butts."],
+      ["!hedidit","You crazy son-of-a-bitch you did it."],
+      ["!inherds","They do move in herds"],
+      ["!nobodycares","See, nobody cares."],
+      ["!shootit","Shooot her!"],
+      ["!thereitis","Well, there it is. There it is."],
+      ["!welcomejp","Welcome, to Jurassic Park"]
+    ]
+  },
+  {
+    "source": "Masters of the Universe",
+    "reactions": [
+      ["!thepower","I have the power!"]
+    ]
+  },
+  {
+    "source": "The Amanda Show",
+    "reactions": [
+      ["!dancinglobs","Court dismissed. Bring in the dancing lobsters."]
+    ]
+  }
+]

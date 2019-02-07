@@ -45,13 +45,23 @@
   padding: 10px 0;
 }
 
-#blogContent table {
-  margin: 10px;
+#blogContent p {
+  margin: 20px 0;
 }
 
-#blogContent table td {
+#blogContent table {
+  width: auto;
+  margin: 20px;
+}
+
+#blogContent table.big {
+  width: 100%;
   font-size: 1.5em
-} 
+}
+
+#blogContent .left-text {
+  text-align: left;
+}
 
 #blog #blogDate {
   padding-left: 5px;

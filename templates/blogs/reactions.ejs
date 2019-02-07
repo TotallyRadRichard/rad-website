@@ -1,0 +1,23 @@
+<p>You, yes YOU, have the power to play reactions right on Richard's stream! Act now and well send you two free reactions with your purchase!</p>
+
+<p>Reaction clips are played via chat commands, always cost 1 tape to play, and always have a 10 minute cooldown.</p>
+
+<p>All the reactions available are listed here, organized by soruce.</p>
+
+<table class="big">
+  <tr>
+    <th>Command</th>
+    <th>Quote</th>
+  </tr>
+  <% data.forEach(function(source){ %>
+    <tr>
+      <th colspan="2" class="left-text"><%= source.source %></th>
+    </tr>
+    <% source.reactions.forEach(function(react){ %>
+      <tr>
+        <td><%= react[0] %></td>
+        <td><%= react[1] %></td>
+      </tr>
+    <% }); %>
+  <% }); %>
+</table>

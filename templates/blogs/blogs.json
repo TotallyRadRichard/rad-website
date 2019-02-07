@@ -1,0 +1,31 @@
+[
+  {
+    "title": "money is the rool of evil",
+    "mood": "angry",
+    "listening": {
+      "song": "All Star",
+      "art": "Astro_lounge.png",
+      "artist": "Smash Mouth",
+      "released": "08 June, 1999",
+      "link": "https://en.wikipedia.org/wiki/Astro_Lounge"
+    },
+    "date": "Monday, May 15, 2006",
+    "time": "4:21pm",
+    "file": "currency"
+  },
+  {
+    "title": "reacting to Richard is entertaining",
+    "mood": "funny",
+    "listening": {
+      "song": "Walkin' on the Sun",
+      "art": "220px-FushYuMang.jpg",
+      "artist": "Smash Mouth",
+      "released": "08 July, 1997",
+      "link": "https://en.wikipedia.org/wiki/Fush_Yu_Mang"
+    },
+    "date": "Monday, May 15, 2006",
+    "time": "4:21pm",
+    "file": "reactions",
+    "data": "reactions"
+  }
+]
