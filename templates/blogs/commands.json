@@ -1,0 +1,6 @@
+[
+  {
+    "command": "!thing",
+    "description": "This is a command thingy."
+  }
+]

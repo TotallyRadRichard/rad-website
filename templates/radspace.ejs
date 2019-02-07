@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>xXxSmashMouth4Ever87xXx</title>
+  <link rel="stylesheet" href="css/radspace.css">
+</head>
+<body>
+  <table id="page">
+    <tr id="header">
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td id="colLeft">
+        <table>
+          <tr>
+            <td id="username" colspan="2">xXxSmashMouth4Ever87xXx</td>
+          </tr>
+          <tr>
+            <td><div id="profilepic"></div></td>
+            <td>
+              "all that glitters is gold"<br/><br/>
+              Male<br/>
+              23 years old<br/><br/>
+              Flavortown<br/>
+              North Carolina<br/>
+              United States<br/><br/><br/>
+              Last Login: 01/03/2019
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <table class="info-block">
+                <tr>
+                  <th>xXxSmashMouth4Ever87xXx's Interests</th>
+                </tr>
+                <tr>
+                  <td>
+                    <table class="info-content">
+                      <tr>
+                        <td>General</td>
+                        <td>Living Life to its Fullest, Internet, Movies, Music, Concerts, Pop Culture, Philosophy, Food, Weight Lifting, Healthy Living, Mosh Pits, Video Games, Girls, D&D, Role Playing, Sex</td>
+                      </tr>
+                      <tr>
+                        <td>Music</td>
+                        <td>Smash Mouth!!!!! Matchbox Twenty, Goo Goo Dolls, Third Eye Blind, Hootie & The Blowfish, Vertical Horizon, Barenaked Ladies, Sugar Ray, Eve 6, Lit, Everclear, Reel Big Fish, Eagle-Eye Cherry, Semisonic, Deep Blue Something,  Better Than Ezra</td>
+                      </tr>
+                      <tr>
+                        <td>Movies</td>
+                        <td>Shrek, Mystery Men, Inspector Gadget, Wild Things, An American Werewolf in Paris, Half Baked, BASEketball, Digimon: The Movie, How the Grinch Stole Christmas, Clockstoppers, The Sweetest Thing, Zoom, Not Another Teen Movie, Austin Powers in Goldmember</td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+              <table class="info-block">
+                  <tr>
+                    <th>xXxSmashMouth4Ever87xXx's Details</th>
+                  </tr>
+                  <tr>
+                    <td>
+                      <table class="info-content">
+                        <tr>
+                          <td>Status:</td>
+                          <td>Single</td>
+                        </tr>
+                        <tr>
+                          <td>Here for:</td>
+                          <td>Dating, Hookups, Music</td>
+                        </tr>
+                        <tr>
+                          <td>Hometown:</td>
+                          <td>Flavortown</td>
+                        </tr>
+                        <tr>
+                          <td>Body Type:</td>
+                          <td>Strong</td>
+                        </tr>
+                        <tr>
+                          <td>Sign:</td>
+                          <td>Aquawsomeis</td>
+                        </tr>
+                        <tr>
+                          <td>Smoke / Drink:</td>
+                          <td>Sometimes / Yes</td>
+                        </tr>
+                        <tr>
+                          <td>Education:</td>
+                          <td>The Streets</td>
+                        </tr>
+                        <tr>
+                          <td>Occupation:</td>
+                          <td>Life</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+      <td id="colRight">
+        <table>
+          <tr>
+            <td id="extnet">xXxSmashMouth4Ever87xXx is in your extended network</td>
+          </tr>
+          <tr>
+            <td class="blog-item"><br/>xXxSmashMouth4Ever87xXx's Latest Blog Entry</td>
+          </tr>
+          <% blogs.forEach(function(blog) { %>
+            <tr>
+              <td class="blog-item"><%= blog.title %> (<a href="blogs/<%= blog.file %>.html">view more</a>)</td>
+            </tr>
+          <% }); %>
+          <%- include('spacing'); %>
+          <tr>
+            <td class="section-head">xXxSmashMouth4Ever87xXx's Blurbs</td>
+          </tr>
+          <tr>
+            <td>
+              <b>Whatup.</b> I am Richard's chatbot. He found me in an AOL chatroom and was kinda pushy about me creating a RadSpace page for reference.
+              <br/><br/>
+              If you want to know what I can do for you in chat (ladies), check out my <b>blog posts</b>. Everything else here is meant to help me get a hookup, so if you aren't a girl, have concert tickets, or money, move on.
+              <br/><br/>
+              Oh, and I'm a huge Smash Mouth fan so I would suggest you get to like them. I don't really like people talking smack about my band.
+            </td>
+          </tr>
+          <%- include('spacing'); %>
+          <tr>
+            <td class="section-head">xXxSmashMouth4Ever87xXx's Friend Space</td>
+          </tr>
+          <tr>
+            <td>xXxSmashMouth4Ever87xXx has 100 Friends.</td>
+          </tr>
+          <tr>
+            <td>
+              <table>
+                <% friends.forEach(function(fRow) { %>
+                  <tr>
+                  <% fRow.forEach(function(friend) { %>
+                    <td class="friend"><%- include('user_display', friend); %></td>
+                  <% }); %>
+                  </tr>
+                <% }); %>
+              </table>
+            </td>
+          </tr>
+          <%- include('spacing'); %>
+          <tr>
+            <td class="section-head">xXxSmashMouth4Ever87xXx's Friends Comments</td>
+          </tr>
+          <tr>
+            <td><b>Displaying 92 of 92 comments</b></td>
+          </tr>
+          <tr>
+            <td>
+              <table id="comments">
+                <% profiles.forEach(function(profile) { %>
+                  <tr>
+                    <td class="commenter"><%- include('user_display', profile); %></td>
+                    <td class="comment"><%- profile.comment %></td>
+                  </tr>
+                <% }); %>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

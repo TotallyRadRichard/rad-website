@@ -1,0 +1,14 @@
+<p>Testing this thing out. See what happens.</p>
+
+<table>
+  <tr>
+    <th>Command</th>
+    <th>Description</th>
+  </tr>
+  <% data.forEach(function(cmd){ %>
+    <tr>
+      <td><%= cmd.command  %></td>
+      <td><%= cmd.description  %></td>
+    </tr>
+  <% }); %>
+</table>

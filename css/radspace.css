@@ -1,0 +1,122 @@
+body {
+  background: url(../img/starstwinkle2.gif);
+}
+
+table {
+  width: 100%;
+}
+
+td {
+  padding: 5px;
+}
+
+p {
+  margin: 0;
+}
+
+.friend, .commenter {
+  text-align: center;
+}
+
+.username {
+  color: #4e607b;
+  text-decoration: underline;
+}
+
+.profile-pic {
+  display: inline-block;
+  background-position: center center;
+}
+
+
+.info-block {
+  margin-bottom: 20px;
+  border: 2px solid	#6699cc;
+  border-collapse: collapse;
+}
+
+.info-block th {
+  padding: 2px;
+  padding-left: 20px;
+  font-weight: normal;
+  text-align: left;
+  background-color:#6699cc;
+}
+
+.info-block td {
+  padding: 0;
+}
+
+.info-content {
+  border-spacing: 3px;
+}
+
+.info-block .info-content td {
+  padding: 5px;
+  vertical-align: top;
+}
+
+.info-content td:first-child {
+  width: 30%;
+  background: #b1d0f0;
+}
+
+.info-content td:last-child {
+  background: #d5e8fb;
+}
+
+#page {
+  width: 800px;
+  margin: 0 auto;
+  background: #fff;
+  border-collapse: collapse;
+}
+
+#page #header {
+  height: 50px;
+  padding: 5px;
+  background: #003399 url('../img/radspace logo.png') no-repeat center;
+  background-origin: content-box;
+  background-size: contain;
+}
+
+#page #colLeft,
+#page #colRight {
+  vertical-align: top;
+}
+
+#page #colLeft {
+  width: 45%;
+  padding-left: 18px;
+}
+
+#page #colRight {
+  width: 55%;
+  padding-right: 10px;
+}
+
+#profilepic {
+  display: inline-block;
+  width: 175px;
+  height: 175px;
+  background: url(../img/profiles/1486689504-smash-mouth.jpg) top center;
+  background-size: cover;
+}
+
+#extnet {
+  padding: 30px 0;
+  text-align: center;
+  border: 2px solid black;
+}
+
+.section-head {
+  background: #ffcc99;
+}
+
+.commenter {
+  background: #ff9933;
+}
+
+.comment {
+  background: #f9d6b4;
+}
